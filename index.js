@@ -108,12 +108,13 @@ console.log(CountWord(input2));
 
 //Q9
 // Input: [10, 2, 14, 5, 7]
-let input3 = [1, 2, 3, 4, 5];
-for (let i = 0; i < input3.length; i++) {
-  if (input3[i] < input3[i + 1]) {
-    input3[i + 1] = input3[i];
-  }
+let input3 = [10,2,14,5,7];
+function smallNumber(input3){
+  var output3=input3.sort((a,b) => a-b);
+  return input3[1];
 }
-console.log(input3[i + 1]);
+console.log(smallNumber(input3));
+
 
 //Q10
+
